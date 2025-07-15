@@ -4,7 +4,7 @@ This is an Appointment Scheduling System with customizing Service Application Fe
 
 ## 🚀 Live Demo
 
-[Website](https://appointment-scheduler-olive.vercel.app/)
+[Website](https://appointment-scheduler-aj.vercel.app/)
 
 ## 📌 Status
 
