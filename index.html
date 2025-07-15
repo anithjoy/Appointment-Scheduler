@@ -6,18 +6,48 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        color: aliceblue;
         text-align: center;
-        padding-top: 5%;
-        background-color: #020202;
+        padding-top: 10%;
+        margin: 0;
+        transition: background-color 0.3s, color 0.3s;
       }
+
+      .light-mode {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .dark-mode {
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      .toggle-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 5px;
+        background-color: #444;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
       .gif-wrapper {
         width: 50%;
-        margin: 20px auto; /* 👈 centers the div */
+        margin: 20px auto;
+      }
+
+      a {
+        color: #00bfff;
       }
     </style>
   </head>
-  <body>
+  <body class="light-mode">
+    <button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button>
+
     <h1>Scalable Appointment Scheduler System</h1>
     <h2>🚧 Project is in Designing and building stage 🚧</h2>
 
@@ -41,5 +71,12 @@
       async
       src="https://tenor.com/embed.js"
     ></script>
+    <script>
+      function toggleMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        body.classList.toggle("light-mode");
+      }
+    </script>
   </body>
 </html>
